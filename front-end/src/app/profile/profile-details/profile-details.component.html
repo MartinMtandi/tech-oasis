@@ -1,0 +1,39 @@
+<div>
+  <div class="row">
+      <div class="col-4">
+        <div class="shadow-lg">
+          <div class="p-2">
+            <div class="image-wrapper">
+              <img class="img-fluid rounded card-img-top" src="assets/images/1.jpg" />
+              <ul class="list-inline text-center member-action animate">
+                <li class="list-inline-item">
+                  <button class="btn btn-action btn-info">Visit Website</button>
+                </li>
+                <li class="list-inline-item">
+                  <button class="btn btn-action btn-info">Request CV</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-8">
+          <h1>{{profile.Firstname}} {{profile.Lastname}}</h1>
+          <h5 class="text-monospace text-muted">{{profile.Bio}}</h5>
+          <div class="text-muted mt-4 ">
+            <div class="d-flex flex-row">
+              <h5 class="pr-2 border-right">{{profile.WebsiteURL}}</h5>
+              <h5 class="px-2 border-right">{{profile.Email}}</h5>
+              <h5 class="px-2">{{profile.Phone}}</h5>
+            </div>
+          </div>
+          <div class="my-3" *ngIf="profiles.length">
+            <button class="btn btn-nav btn-dark mr-2" (click)="first()">First</button>
+            <button class="btn btn-nav btn-dark mx-2" (click)="previous()">Previous</button>
+            <button class="btn btn-nav btn-dark mx-2" (click)="next()">Next</button>
+            <button class="btn btn-nav btn-dark ml-2" (click)="last()">Last</button>
+          </div>
+      </div>
+  </div>
+</div>
+

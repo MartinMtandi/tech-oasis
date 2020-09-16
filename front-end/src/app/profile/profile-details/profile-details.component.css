@@ -1,0 +1,49 @@
+
+.btn-nav{
+  width: 110px;
+}
+
+.btn-action{
+  width: 130px;
+}
+
+.d-flex{
+  letter-spacing: 0.11rem;
+}
+
+.shadow-lg:hover div img{
+  transform: scale(1.1,1.1);
+  transition-duration: 500ms;
+  transition-timing-function: ease-out;
+  opacity: 0.8;
+}
+
+.shadow-lg div img{
+  transform: scale(1,1);
+  transition-duration: 500ms;
+  transition-timing-function: ease-out;
+}
+
+.image-wrapper{
+  overflow: hidden;
+  position: relative;
+}
+
+.image-wrapper:hover .member-action{
+  bottom: 0;
+  opacity: 1;
+}
+
+.member-action{
+  position: absolute;
+  bottom: -10;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+}
+
+.animate{
+  transition: all 0.5s ease-in-out;
+}
