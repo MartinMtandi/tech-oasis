@@ -3,8 +3,9 @@
       <div class="col-4">
         <div class="shadow-lg">
           <div class="p-2">
+            <!--*>0"-->
             <div class="image-wrapper">
-              <img class="img-fluid rounded card-img-top" src="assets/images/1.jpg" />
+              <img class="img-fluid rounded card-img-top" src="assets/images/{{profile.profileIMG}}" />
               <ul class="list-inline text-center member-action animate">
                 <li class="list-inline-item">
                   <button class="btn btn-action btn-info">Visit Website</button>
@@ -18,16 +19,16 @@
         </div>
       </div>
       <div class="col-8">
-          <h1>{{profile.Firstname}} {{profile.Lastname}}</h1>
-          <h5 class="text-monospace text-muted">{{profile.Bio}}</h5>
+          <h1>{{profile.firstname}} {{profile.lastname}}</h1>
+          <h5 class="text-monospace text-muted">{{profile.bio}}</h5>
           <div class="text-muted mt-4 ">
             <div class="d-flex flex-row">
-              <h5 class="pr-2 border-right">{{profile.WebsiteURL}}</h5>
-              <h5 class="px-2 border-right">{{profile.Email}}</h5>
-              <h5 class="px-2">{{profile.Phone}}</h5>
+              <h5 class="pr-2 border-right">{{profile.websiteURL}}</h5>
+              <h5 class="px-2 border-right">{{profile.email}}</h5>
+              <h5 class="px-2">{{profile.phone}}</h5>
             </div>
           </div>
-          <div class="my-3" *ngIf="profiles.length">
+          <div class="my-3">
             <button class="btn btn-nav btn-dark mr-2" (click)="first()">First</button>
             <button class="btn btn-nav btn-dark mx-2" (click)="previous()">Previous</button>
             <button class="btn btn-nav btn-dark mx-2" (click)="next()">Next</button>

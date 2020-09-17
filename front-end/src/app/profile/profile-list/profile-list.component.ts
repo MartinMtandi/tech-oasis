@@ -12,7 +12,7 @@ export class ProfileListComponent implements OnInit {
   constructor(private http:HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get('data/profiles.json').subscribe(
+    this.http.get('http://localhost:54986/api/profiles').subscribe(
       data=>{
         this.profiles = data;
       }

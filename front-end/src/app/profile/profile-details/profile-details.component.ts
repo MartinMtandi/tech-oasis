@@ -12,7 +12,6 @@ export class ProfileDetailsComponent implements OnInit {
   profile:any;
 
   ngOnInit(){
-    console.log(this.profiles)
     this.profile=this.profiles[this.profileIndex];
   }
 
